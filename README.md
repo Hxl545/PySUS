@@ -4,6 +4,7 @@ Utilizing Google Collaboration
 
 Installation of PYSUS
 
+Credit to :
 
 	@software{flavio_codeco_coelho_2021_4883502,
 	  author       = {Flávio Codeço Coelho and
