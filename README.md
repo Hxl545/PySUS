@@ -24,12 +24,12 @@ List of Diseases
 	SINAN.list_diseases()
 	
 	
-Years Available with disease
+Years Available with disease ('disease name')
 
 	SINAN.get_available_years('Hanseniase')
 	
 	
-Pulling Data from Parquet File
+Pulling Data from Parquet File ('file', year, month)
 	
 	TO = download('to', 2022, 3)
 	dfTO = parquets_to_dataframe(TO)
