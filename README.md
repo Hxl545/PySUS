@@ -92,6 +92,7 @@ Years Available with disease ('disease name')
 	
 Pulling Data from Parquet File ('file', year, month)
 	
+	TO = download('Hanseniase', 2022, 3)
 	TO = download('to', 2022, 3)
 	dfTO = parquets_to_dataframe(TO)
 	dfTO.head()
