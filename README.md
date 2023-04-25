@@ -23,10 +23,71 @@ List of Diseases
 
 	SINAN.list_diseases()
 	
+	['Animais Peçonhentos',
+ 	'Botulismo',
+	'Cancer',
+ 	'Chagas',
+	'Chikungunya',
+ 	'Colera',
+	'Coqueluche',
+	'Contact Communicable Disease',
+	'Acidentes de Trabalho',
+	'Dengue',
+	'Difteria',
+	'Esquistossomose',
+	'Febre Amarela',
+	'Febre Maculosa',
+	'Febre Tifoide',
+	'Hanseniase',
+	'Hantavirose',
+	'Hepatites Virais',
+	'Intoxicação Exógena',
+	'Leishmaniose Visceral',
+	'Leptospirose',
+	'Leishmaniose Tegumentar',
+	'Malaria',
+	'Meningite',
+	'Peste',
+	'Poliomielite',
+	'Raiva Humana',
+	'Sífilis Adquirida',
+	'Sífilis Congênita',
+	'Sífilis em Gestante',
+	'Tétano Acidental',
+	'Tétano Neonatal',
+	'Tuberculose',
+	'Violência Domestica',
+	'Zika']
+	
 	
 Years Available with disease ('disease name')
 
 	SINAN.get_available_years('Hanseniase')
+	
+	Out[]: 
+	['2001',
+ 	'2002',
+ 	'2003',
+	'2004',
+ 	'2005',
+	'2006',
+ 	'2007',
+ 	'2008',
+ 	'2009',
+ 	'2010',
+	'2011',
+	'2012',
+	'2013',
+ 	'2014',
+ 	'2015',
+ 	'2016',
+ 	'2017',
+ 	'2018',
+ 	'2019',
+ 	'2020',
+ 	'2021',
+ 	'2022',
+ 	'2023']
 	
 	
 Pulling Data from Parquet File ('file', year, month)
@@ -34,6 +95,13 @@ Pulling Data from Parquet File ('file', year, month)
 	TO = download('to', 2022, 3)
 	dfTO = parquets_to_dataframe(TO)
 	dfTO.head()
+	
+		PA_CODUNI	PA_GESTAO	PA_CONDIC	PA_UFMUN	PA_REGCT	PA_INCOUT	PA_INCURG	PA_TPUPS	PA_TIPPRE	PA_MN_IND	...	PA_CODOCO	PA_FLQT	PA_FLER	PA_ETNIA	PA_VL_CF	PA_VL_CL	PA_VL_INC	PA_SRV_C	PA_INE	PA_NAT_JUR
+	0	2829606	172100	PG	172100	0000	0000	0000	73	00	M	...	1	K	0		0.00	0.00	0.00			1244
+	1	2829606	172100	PG	172100	0000	0000	0000	73	00	M	...	1	K	0		0.00	0.00	0.00			1244
+	2	7015267	172100	PG	172100	0000	0000	0000	05	00	I	...	1	K	0		0.00	0.00	0.00	131001		2062
+	3	7521901	172100	PG	172100	0000	0000	0000	39	00	I	...	1	K	0		0.00	0.00	0.00	145003		2305
+	4	7759290	172100	PG	172100	0000	0000	0000	36	00	M	...	1	K	0		0.00	0.00	0.00			1244
 	
 Converting Parquet File to CSV
 
